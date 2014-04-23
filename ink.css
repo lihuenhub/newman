@@ -318,7 +318,7 @@ img.center {
 
 body, table.body, h1, h2, h3, h4, h5, h6, p, td { 
   color: #222222;
-  font-family: "Helvetica", "Arial", sans-serif; 
+  font-family: "Helvetica Neue", "Arial", sans-serif; 
   font-weight: normal; 
   padding:0; 
   margin: 0;
@@ -345,6 +345,7 @@ p.lead, p.lede, p.leed {
 
 p { 
   margin-bottom: 10px;
+  font-family: "Georgia", "Arial", sans-serif; 
 }
 
 small {
@@ -693,5 +694,7 @@ a {color:#00befa; text-decoration: underline;}
 .bg {background:#ffffff;}
 .quote {font-style: italic; line-height: 26px !important;}
 .deco {border-bottom: 5px solid #444444;}
-.footer a {font-size: 12px; font-weight: bold;}
-.footer a img {padding:3px 0;}
+.deco img {padding-bottom:25px !important;}
+.footer {border-top:1px solid #cccccc; padding-top:10px !important;}
+.footer a {font-size: 12px; font-weight: bold; font-family: "Helvetica Neue", "Arial", sans-serif !important; }
+.footer a img {padding:3px 0; margin:0 auto; text-align: center; float: none;}
