@@ -687,3 +687,4 @@ body.outlook p {
 
 body, .body {background:#f1f1f1;}
 .bg {background:#ffffff;}
+.quote p {font-style: italic; line-height: 23px;}
