@@ -400,7 +400,7 @@ h6 a:visited {
 .panel {
   padding: 5px 20px !important;
 }
-
+.panel p {margin:20px 0; line-height: 20px;}
 .sub-grid table {
   width: 100%;
 }
@@ -686,5 +686,9 @@ body.outlook p {
 }
 
 body, .body {background:#f1f1f1;}
+.nogap {padding:0 !important;}
 .bg {background:#ffffff;}
-.quote p {font-style: italic; line-height: 23px;}
+.quote {font-style: italic; line-height: 26px !important;}
+.footer {border-bottom: 5px solid #444444;}
+.footer a {font-size: 12px; font-weight: bold;}
+.footer a img {padding:3px 0;}
