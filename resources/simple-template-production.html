@@ -4,7 +4,6 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width"/>
 
-
   <style type="text/css">
 
 /**********************************************
@@ -67,7 +66,7 @@ a img {
 }
 
 p {
-  margin: 0 0 0 10px; color:#444444;
+  margin: 0 0 0 10px; color:#444444 !important;
 }
 
 table {
@@ -76,10 +75,10 @@ table {
 }
 
 td { 
-  word-break: break-word;
+  /*word-break: break-word;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
-  hyphens: auto;
+  hyphens: auto;*/
   border-collapse: collapse !important; 
 }
 
@@ -339,7 +338,7 @@ h1, h2, h3, h4, h5, h6 {
   word-break: normal;
 }
 
-h1 {font-size: 40px;}
+h1 {font-size: 36px;}
 h2 {font-size: 36px;}
 h3 {font-size: 32px;}
 h4 {font-size: 28px;}
@@ -354,7 +353,7 @@ p.lead, p.lede, p.leed {
 
 p { 
   margin-bottom: 10px;
-  font-family: Georgia, serif; 
+  font-family: Georgia, serif !important; 
 }
 
 small {
@@ -410,7 +409,7 @@ h6 a:visited {
 .panel {
   padding: 5px 20px !important;
 }
-.panel p {margin:20px 0; line-height: 20px;}
+.panel p {margin:5px 0 20px 0; line-height: 20px;}
 .sub-grid table {
   width: 100%;
 }
@@ -584,31 +583,37 @@ body.outlook p {
   display: inline !important;
 }
 
-
 body, .body {background:#f1f1f1;}
-h1 {font-weight: bold;}
-.date {font-weight:bold; color:#999; font-family: "Helvetica Neue", "Arial", sans-serif}
+h1 {font-weight: bold; color:#444;}
+.date {font-weight:bold; color:#888; font-size: 12px; padding-top: 35px; font-family: "Helvetica Neue", "Arial", sans-serif !important;}
 a {color:#00befa; text-decoration: underline;}
 .nogap {padding:0 !important;}
 .bg {background:#ffffff;}
 .quote {font-style: italic; line-height: 26px !important;}
-.deco {border-bottom: 5px solid #444444;}
-.deco img {padding-bottom:25px !important;}
+.deco {border-bottom: 10px solid #444444;}
+.deco img {width:32px;}
+.deco .panel {padding-bottom:50px !important; padding-top: 50px !important;}
 .footer {border-top:1px solid #cccccc; padding-top:10px !important;}
 .footer a {font-size: 12px; font-weight: bold; font-family: "Helvetica Neue", "Arial", sans-serif !important; }
-.footer a img {padding:3px 0; margin:0 auto; text-align: center; float: none;}
+.footer a img {padding:3px 0; margin:0 auto; text-align: center; float: none; position: relative; top:0.2em;}
+.footer ul {padding-left: 20px;}
 .footer ul li {list-style: none; margin:0 15px; display: inline-table;}
-.footer ul li:first-child {margin-left: 0;}
+.footer ul li:first-child {margin-left: 0; margin-right: 20px;}
 .footer ul li img {max-width:153px;}
 
 /*  Media Queries */
 
 @media only screen and (max-width: 600px) {
-.footer ul li {list-style: none; margin:5px 0 !important; padding:0 !important; display: block !important; text-align: center !important;}
+.footer ul {padding:0 !important;}
+.footer ul li {list-style: none; margin:5px 0; padding:0; display: block; text-align: center;}
+.footer ul li img {max-width:153px; margin-bottom: 25px;}
+
   table[class="body"] img {
     width: auto !important;
     height: auto !important;
   }
+
+table[class="body"] .deco img {width:32px !important;}
 
   table[class="body"] center {
     min-width: 0 !important;
@@ -715,11 +720,6 @@ a {color:#00befa; text-decoration: underline;}
 
 
   </style>
-  <style type="text/css">
-
-    /* Your custom styles go here */
-
-  </style>
 </head>
 <body style="background:#f1f1f1;">
   <table class="body" style="background:#f1f1f1;">
@@ -737,7 +737,7 @@ a {color:#00befa; text-decoration: underline;}
                       <table class="twelve columns bg">
                         <tr>
                           <td>
-                            <img src="@header.png" alt="spines" />
+                            <img src="resources/@header.png" alt="spines" />
                           </td>
                         </tr>
                         <!-- body -->
@@ -771,7 +771,7 @@ a {color:#00befa; text-decoration: underline;}
                         <!-- image -->
                         <tr>
                           <td>
-                            <img src="@img-sample.jpg" alt="sample" />
+                            <img src="resources/@img-sample.jpg" alt="sample" />
                           </td>
                         </tr>
                         <!-- body again -->
@@ -796,53 +796,11 @@ a {color:#00befa; text-decoration: underline;}
                           <td class="footer wrapper">
                             <table class="twelve columns">
                               <ul>
-                                <li><a href="http://spines.me"><img src="@footer-logo.png" alt="spines logo" /></a></li>
+                                <li><a href="http://spines.me"><img src="resources/@footer-logo.png" alt="spines logo" /></a></li>
                                 <li><a href="http://spines.me">www.spines.me</a></li>
                                 <li><a href="mailto:hi@spines.me">hi@spines.me</a></li>
                                 <li><a href="http://twitter.com/spinesme">@spinesme</a></li>
                               </ul>
-                              <!-- <tr>
-                                <td class="wrapper">
-                                  <table class="three columns">
-                                    <tr>
-                                      <td class="center panel">
-                                        <a href="http://spines.me"><img src="@footer-logo.png" alt="spines logo" /></a>
-                                      </td>
-                                      <td class="expander"></td>
-                                    </tr>
-                                  </table>
-                                </td>
-                                <td class="wrapper">
-                                  <table class="three columns">
-                                    <tr>
-                                      <td class="center panel">
-                                        <a href="http://www.spines.me">www.spines.me</a>
-                                      </td>
-                                      <td class="expander"></td>
-                                    </tr>
-                                  </table>
-                                </td>
-                                <td class="wrapper">
-                                  <table class="three columns">
-                                    <tr>
-                                      <td class="center panel">
-                                        <a href="mailto:hi@spines.me">hi@spines.me</a>
-                                      </td>
-                                      <td class="expander"></td>
-                                    </tr>
-                                  </table>               
-                                </td>
-                                <td class="wrapper last">
-                                  <table class="three columns">
-                                    <tr>
-                                      <td class="center panel">
-                                        <a href="http://twitter.com/spinesme">@spinesme</a>
-                                      </td>
-                                      <td class="expander"></td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr> -->
                             </table>
                           </td>
                         </tr>
@@ -850,7 +808,7 @@ a {color:#00befa; text-decoration: underline;}
                       <table class="twelve columns bg deco">
                         <tr>
                           <td class="panel">
-                            <span class="center"><img src="@spines-icon.png" alt="spines icon" class="center" /></span>
+                            <span class="center"><img src="resources/@spines-icon.png" alt="spines icon" class="center" /></span>
                           </td>
                           <td class="expander"></td>
                         </tr>
