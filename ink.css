@@ -50,7 +50,7 @@ img {
 
 center {
   width: 100%;
-  min-width: 580px;
+  min-width: 600px;
 }
 
 a img { 
@@ -95,7 +95,7 @@ table.body {
 }
 
 table.container {
-  width: 580px;
+  width: 600px;
   margin: 0 auto;
   text-align: inherit;
 }
@@ -152,7 +152,7 @@ table.eight { width: 380px; }
 table.nine { width: 430px; }
 table.ten { width: 480px; }
 table.eleven { width: 530px; }
-table.twelve { width: 580px; }
+table.twelve { width: 600px; }
 
 table.one center { min-width: 30px; }
 table.two center { min-width: 80px; }
@@ -165,7 +165,7 @@ table.eight center { min-width: 380px; }
 table.nine center { min-width: 430px; }
 table.ten center { min-width: 480px; }
 table.eleven center { min-width: 530px; }
-table.twelve center { min-width: 580px; }
+table.twelve center { min-width: 600px; }
 
 table.one .panel center { min-width: 10px; }
 table.two .panel center { min-width: 60px; }
@@ -247,7 +247,7 @@ table.column .text-pad-right {
 
 .block-grid {
   width: 100%;
-  max-width: 580px;
+  max-width: 600px;
 }
 
 .block-grid td {
@@ -589,7 +589,7 @@ body.outlook p {
   }
 
   table[class="body"] .container {
-    width: 95% !important;
+    width: 100% !important;
   }
 
   table[class="body"] .row {
@@ -698,3 +698,6 @@ a {color:#00befa; text-decoration: underline;}
 .footer {border-top:1px solid #cccccc; padding-top:10px !important;}
 .footer a {font-size: 12px; font-weight: bold; font-family: "Helvetica Neue", "Arial", sans-serif !important; }
 .footer a img {padding:3px 0; margin:0 auto; text-align: center; float: none;}
+.footer ul li {list-style: none; margin:0 15px; display: inline-table;}
+.footer ul li:first-child {margin-left: 0;}
+.footer ul li img {max-width:153px;}

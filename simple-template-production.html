@@ -3,11 +3,8 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width"/>
-  <style type="text/css">
 
-    /* Ink styles go here in production */
 
-  </style>
   <style type="text/css">
 
 /**********************************************
@@ -62,7 +59,7 @@ img {
 
 center {
   width: 100%;
-  min-width: 580px;
+  min-width: 600px;
 }
 
 a img { 
@@ -107,7 +104,7 @@ table.body {
 }
 
 table.container {
-  width: 580px;
+  width: 600px;
   margin: 0 auto;
   text-align: inherit;
 }
@@ -164,7 +161,7 @@ table.eight { width: 380px; }
 table.nine { width: 430px; }
 table.ten { width: 480px; }
 table.eleven { width: 530px; }
-table.twelve { width: 580px; }
+table.twelve { width: 600px; }
 
 table.one center { min-width: 30px; }
 table.two center { min-width: 80px; }
@@ -177,7 +174,7 @@ table.eight center { min-width: 380px; }
 table.nine center { min-width: 430px; }
 table.ten center { min-width: 480px; }
 table.eleven center { min-width: 530px; }
-table.twelve center { min-width: 580px; }
+table.twelve center { min-width: 600px; }
 
 table.one .panel center { min-width: 10px; }
 table.two .panel center { min-width: 60px; }
@@ -259,7 +256,7 @@ table.column .text-pad-right {
 
 .block-grid {
   width: 100%;
-  max-width: 580px;
+  max-width: 600px;
 }
 
 .block-grid td {
@@ -348,16 +345,16 @@ h3 {font-size: 32px;}
 h4 {font-size: 28px;}
 h5 {font-size: 24px;}
 h6 {font-size: 20px;}
-body, table.body, p, td {font-size: 14px;line-height:19px;}
+body, table.body, p, td {font-size: 16px;line-height:19px;}
 
 p.lead, p.lede, p.leed {
-  font-size: 18px;
+  font-size: 21px;
   line-height:21px;
 }
 
 p { 
   margin-bottom: 10px;
-  font-family: "Georgia", "Arial", sans-serif; 
+  font-family: Georgia, serif; 
 }
 
 small {
@@ -601,7 +598,7 @@ body.outlook p {
   }
 
   table[class="body"] .container {
-    width: 95% !important;
+    width: 100% !important;
   }
 
   table[class="body"] .row {
@@ -700,7 +697,7 @@ body.outlook p {
 
 body, .body {background:#f1f1f1;}
 h1 {font-weight: bold;}
-.date {font-weight:bold; color:#999;}
+.date {font-weight:bold; color:#999; font-family: "Helvetica Neue", "Arial", sans-serif}
 a {color:#00befa; text-decoration: underline;}
 .nogap {padding:0 !important;}
 .bg {background:#ffffff;}
@@ -710,11 +707,19 @@ a {color:#00befa; text-decoration: underline;}
 .footer {border-top:1px solid #cccccc; padding-top:10px !important;}
 .footer a {font-size: 12px; font-weight: bold; font-family: "Helvetica Neue", "Arial", sans-serif !important; }
 .footer a img {padding:3px 0; margin:0 auto; text-align: center; float: none;}
+.footer ul li {list-style: none; margin:0 15px; display: inline-table;}
+.footer ul li:first-child {margin-left: 0;}
+.footer ul li img {max-width:153px;}
+
+  </style>
+  <style type="text/css">
+
+    /* Your custom styles go here */
 
   </style>
 </head>
 <body style="background:#f1f1f1;">
-<table class="body" style="background:#f1f1f1;">
+  <table class="body" style="background:#f1f1f1;">
     <tr>
       <td class="center" align="center" valign="top">
         <center>
@@ -729,7 +734,7 @@ a {color:#00befa; text-decoration: underline;}
                       <table class="twelve columns bg">
                         <tr>
                           <td>
-                            <img src="header.png" alt="spines" />
+                            <img src="@header.png" alt="spines" />
                           </td>
                         </tr>
                         <!-- body -->
@@ -763,7 +768,7 @@ a {color:#00befa; text-decoration: underline;}
                         <!-- image -->
                         <tr>
                           <td>
-                            <img src="img-sample.jpg" alt="sample" />
+                            <img src="@img-sample.jpg" alt="sample" />
                           </td>
                         </tr>
                         <!-- body again -->
@@ -787,12 +792,18 @@ a {color:#00befa; text-decoration: underline;}
                         <tr>
                           <td class="footer wrapper">
                             <table class="twelve columns">
-                              <tr>
+                              <ul>
+                                <li><a href="http://spines.me"><img src="@footer-logo.png" alt="spines logo" /></a></li>
+                                <li><a href="http://spines.me">www.spines.me</a></li>
+                                <li><a href="mailto:hi@spines.me">hi@spines.me</a></li>
+                                <li><a href="http://twitter.com/spinesme">@spinesme</a></li>
+                              </ul>
+                              <!-- <tr>
                                 <td class="wrapper">
                                   <table class="three columns">
                                     <tr>
                                       <td class="center panel">
-                                        <a href="http://spines.me"><img src="footer-logo.png" alt="spines logo" /></a>
+                                        <a href="http://spines.me"><img src="@footer-logo.png" alt="spines logo" /></a>
                                       </td>
                                       <td class="expander"></td>
                                     </tr>
@@ -828,7 +839,7 @@ a {color:#00befa; text-decoration: underline;}
                                     </tr>
                                   </table>
                                 </td>
-                              </tr>
+                              </tr> -->
                             </table>
                           </td>
                         </tr>
@@ -836,7 +847,7 @@ a {color:#00befa; text-decoration: underline;}
                       <table class="twelve columns bg deco">
                         <tr>
                           <td class="panel">
-                            <span class="center"><img src="spine-icon.jpg" alt="spines icon" class="center" /></span>
+                            <span class="center"><img src="@spines-icon.png" alt="spines icon" class="center" /></span>
                           </td>
                           <td class="expander"></td>
                         </tr>
